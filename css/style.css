@@ -14,9 +14,9 @@
     text-decoration: none;
 }
 
-/* html{
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -85,6 +85,46 @@ body {
     display: none;
 }
 
+/* Navbar Search Form */
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: var(--font);
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: -2px 1px 10px #654321;
+    transform: translateY(-200px);
+    /* transform: scaleY(0); */
+    transform-origin: top;
+    transition: 0.5s;
+    z-index: -100;
+}
+
+.navbar .search-form.active {
+    /* transform: scaleY(1); */
+    transform: translateY(0px);
+    z-index: -100;
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: var(--font);
+    color: var(--hitam);
+    padding: 1rem;
+}
+
+.navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--hitam);
+}
+
 
 /* Hero Section */
 .hero {
@@ -126,7 +166,7 @@ body {
     font-size: 1.6rem;
     /* margin-top: 1rem; */
     line-height: 0.5;
-    font-weight: 100;
+    font-weight: 200;
     color: var(--bg);
     font-style: italic;
     /* mix-blend-mode: difference; */
@@ -193,7 +233,7 @@ body {
 .about .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.6;
     color: var(--hitam);
 }
@@ -212,7 +252,7 @@ body {
     margin: auto;
     color: var(--hitam);
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.6;
 }
 
@@ -237,6 +277,10 @@ body {
 .menu .row .menu-card img {
     width: 100%;
     border-radius: 12px 12px 0 0;
+}
+
+.menu .row .menu-card .menu-card-title {
+    padding-top: 1.2rem;
 }
 
 .menu .row .menu-card .menu-card-title,
@@ -396,6 +440,12 @@ footer .credit a {
 
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(1);
+    }
+
+    .navbar .search-form {
+        width: 80%;
+        right: 4rem;
+        height: 80%;
     }
 
     .about .row {
