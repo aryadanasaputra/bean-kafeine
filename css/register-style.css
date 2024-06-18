@@ -18,6 +18,14 @@ body,
 html {
     height: 100vh;
     margin: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 section {
@@ -103,7 +111,7 @@ section {
 .textbox {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     padding: 3px 10px;
     background: var(--font);
     border: none;
@@ -148,9 +156,10 @@ section {
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
     border: none;
+    color: var(--primary);
     background-color: transparent;
 }
 
