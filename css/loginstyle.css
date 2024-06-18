@@ -171,12 +171,16 @@ section {
 }
 
 a {
-    color: #00f;
+    color: blue;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.login-box .quest {
+    padding-top: 0.5rem;
 }
 
 @media (max-width: 1366px) {
